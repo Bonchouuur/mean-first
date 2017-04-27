@@ -1,0 +1,18 @@
+body .page {
+    padding: 20px;
+}
+body .page .header h1 {
+    text-align: center;
+}
+
+.demo-card > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../img/ah.jpg') center / cover;
+}
+.demo-card > .mdl-card__menu {
+    color: #fff;
+}
+.demo-card .mdl-card--border .mdl-button {
+    float: right;
+}

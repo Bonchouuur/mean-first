@@ -1,0 +1,19 @@
+{
+  "name": "mean-first-shot",
+  "description": "First MEAN application",
+  "main": "server.js",
+  "authors": [
+    "BONCHOUUUUR"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.3.0"
+  }
+}
