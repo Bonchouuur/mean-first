@@ -2,4 +2,4 @@
 
 ## TODO
 
-Create your own development.js file from conf/env/development.sample.js one
+Create your own development.js file from config/env/development.sample.js one
