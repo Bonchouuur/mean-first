@@ -10,5 +10,10 @@ module.exports = {
         clientID: 'Application Id',
         clientSecret: 'Application Secret',
         callbackURL: 'http://localhost:3000/oauth/twitter/callback'
+    },
+    google: {
+        clientID: 'Application Id',
+        clientSecret: 'Application Secret',
+        callbackURL: 'http://localhost:3000/oauth/google/callback'
     }
 };
