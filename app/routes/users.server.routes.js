@@ -1,6 +1,6 @@
 var users = require('../../app/controllers/users.server.controller'),
     passport = require('passport');
-module.exports = function(app) {
+module.exports = function (app) {
     app.route('/signup')
         .get(users.renderSignup)
         .post(users.signup);
@@ -13,14 +13,19 @@ module.exports = function(app) {
         }));
     app.get('/signout', users.signout);
     app.get('/oauth/facebook', passport.authenticate('facebook', {
-        redirect_uri: '/',
         failureRedirect: '/signin',
         scope: 'email'
     }));
     app.get('/oauth/facebook/callback', passport.authenticate('facebook',
         {
             failureRedirect: '/signin',
-            successRedirect: '/',
-            redirect_uri: '/'
+            successRedirect: '/'
         }));
+    app.get('/oauth/twitter', passport.authenticate('twitter', {
+        failureRedirect: '/signin'
+    }));
+    app.get('/oauth/twitter/callback', passport.authenticate('twitter', {
+        failureRedirect: '/signin',
+        successRedirect: '/'
+    }));
 };
