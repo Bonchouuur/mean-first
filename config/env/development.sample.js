@@ -1,6 +1,6 @@
 module.exports = {
     sessionSecret: 'XXXXXXXXXXXX',
-    db: 'mongodb://localhost/BASE_NAME',
+    db: 'mongodb://localhost/Database Name',
     facebook: {
         clientID: 'Application Id',
         clientSecret: 'Application Secret',
