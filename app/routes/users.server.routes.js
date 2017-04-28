@@ -12,4 +12,15 @@ module.exports = function(app) {
             failureFlash: true
         }));
     app.get('/signout', users.signout);
+    app.get('/oauth/facebook', passport.authenticate('facebook', {
+        redirect_uri: '/',
+        failureRedirect: '/signin',
+        scope: 'email'
+    }));
+    app.get('/oauth/facebook/callback', passport.authenticate('facebook',
+        {
+            failureRedirect: '/signin',
+            successRedirect: '/',
+            redirect_uri: '/'
+        }));
 };
